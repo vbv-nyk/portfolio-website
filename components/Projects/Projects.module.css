@@ -2,20 +2,20 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center;
+  gap: 15px;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .projectsGrid {
   background: #0000008d;
-  margin-top: 10px;
-  margin-bottom: 20px;
   padding: 20px;
+  margin-bottom: 45px;
   overflow-y: scroll;
   overflow-x: hidden;
   width: max(55%, 500px);
-  max-height: 500px;
+  max-height: calc(100% - 20px);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
 }
 
 .header {
-  font-size: max(2vw, 24px);
+  font-size: calc(20px + 0.390625vw);
   color: white;
 }
 
@@ -47,10 +47,15 @@
   width: 100%;
 }
 
+.projectImage:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   .projectsGrid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: max(80%, 300px);
+    max-height: 100vh;
   }
   .projects {
     justify-content: flex-start;

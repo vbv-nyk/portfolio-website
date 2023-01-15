@@ -31,7 +31,7 @@
   }
 }
 .profileContainer .name {
-  font-size: max(4vmin, 24px);
+  font-size: calc(24px + 0.390625vw);
 }
 
 .profileDetails {
@@ -41,7 +41,8 @@
 }
 .desc {
   max-width: 300px;
-  font-size: max(3vmin, 20px);
+  font-size: calc(15px + 0.390625vw);
+
   word-spacing: 4px;
 }
 .myPicture {
