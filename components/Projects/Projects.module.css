@@ -8,7 +8,10 @@
 }
 
 .projectsGrid {
-  margin: 20px;
+  background: #0000008d;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
   width: max(55%, 500px);
@@ -44,9 +47,12 @@
   width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .projectsGrid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: max(80%, 300px);
+  }
+  .projects {
+    justify-content: flex-start;
   }
 }
