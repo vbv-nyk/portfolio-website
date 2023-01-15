@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 2px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: aliceblue;
+}

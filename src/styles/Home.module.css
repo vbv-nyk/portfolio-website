@@ -1,0 +1,26 @@
+.sectionsContainer {
+  display: flex;
+  background: linear-gradient(
+    to left,
+    #23395d,
+    #203354,
+    #1c2e4a,
+    #192841,
+    #152238
+  );
+  width: max-content;
+}
+
+@media (max-width: 500px) {
+  .sectionsContainer {
+    flex-direction: column;
+    background: linear-gradient(
+      to top,
+      #23395d,
+      #203354,
+      #1c2e4a,
+      #192841,
+      #152238
+    );
+  }
+}
