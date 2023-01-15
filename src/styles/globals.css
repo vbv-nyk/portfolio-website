@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-body {
-  height: max-content;
-}
 ::-webkit-scrollbar {
   display: none;
 }

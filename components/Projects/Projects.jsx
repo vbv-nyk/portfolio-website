@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactDOM } from "react";
 import styles from "./Projects.module.css";
 
 export default function Projects() {
+  const [imageNo, setImageNo] = useState(0);
   return (
     <>
       <div className={styles.projects}>
@@ -10,27 +11,35 @@ export default function Projects() {
         <div className={styles.projectsGrid}>
           <div className={styles.gridItem}>
             <img
-              src="/project1.webp"
+              src={`/project${imageNo}.webp`}
               className={styles.projectImage}
               alt=""
-              srcset=""
             />
+            <div className={styles.projectName}>Opencademy</div>
           </div>
           <div className={styles.gridItem}>
             <img
-              src="/project1.webp"
+              src={`/project${(imageNo + 1) % 2}.webp`}
               className={styles.projectImage}
               alt=""
-              srcset=""
             />
+            <div className={styles.projectName}>Youtify</div>
           </div>
           <div className={styles.gridItem}>
             <img
-              src="/project1.webp"
+              src={`/project${(imageNo + 1) % 2}.webp`}
               className={styles.projectImage}
               alt=""
-              srcset=""
             />
+            <div className={styles.projectName}>Youtify</div>
+          </div>
+          <div className={styles.gridItem}>
+            <img
+              src={`/project${(imageNo + 1) % 2}.webp`}
+              className={styles.projectImage}
+              alt=""
+            />
+            <div className={styles.projectName}>Youtify</div>
           </div>
         </div>
       </div>
