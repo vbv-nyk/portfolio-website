@@ -4,7 +4,7 @@ import styles from "./AboutMe.module.css";
 export default function AboutMe() {
   return (
     <>
-      <div className={styles.test1}></div>
+      <div className={styles.test1}>Hello</div>
     </>
   );
 }
