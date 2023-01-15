@@ -1,12 +1,12 @@
 .sectionsContainer {
   display: flex;
-  background: #000b18;
+  background: #16182a;
   width: max-content;
+  height: 100%;
 }
 
 @media (max-width: 500px) {
   .sectionsContainer {
     flex-direction: column;
-    background: #000b18;
   }
 }

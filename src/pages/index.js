@@ -1,6 +1,7 @@
 import { Inter } from "@next/font/google";
 import AboutMe from "components/AboutMe/AboutMe";
 import NavBar from "components/NavBar/NavBar";
+import Projects from "components/Projects/Projects";
 
 import styles from "../styles/Home.module.css";
 
@@ -11,7 +12,7 @@ export default function Home() {
     <div className={styles.body}>
       <div className={styles.sectionsContainer}>
         <AboutMe />
-        <AboutMe />
+        <Projects />
       </div>
       <NavBar />
     </div>
