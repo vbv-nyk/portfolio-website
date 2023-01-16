@@ -1,11 +1,16 @@
 .sectionsContainer {
-  display: flex;
-  background: #16182a;
-  width: max-content;
+  display: grid;
+  grid-template-columns: 100vw 100vw 100vw;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
 }
 
+.sectionsContainer > {
+  scroll-snap-align: center;
+}
 @media (max-width: 500px) {
   .sectionsContainer {
     flex-direction: column;
+    overflow: hidden;
   }
 }

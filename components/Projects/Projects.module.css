@@ -4,12 +4,14 @@
   display: flex;
   gap: 15px;
   justify-content: center;
+  background-color: #04041d;
   align-items: center;
+  scroll-behavior: smooth;
   flex-direction: column;
+  scroll-snap-align: center;
 }
 
 .projectsGrid {
-  background: #0000008d;
   padding: 20px;
   margin-bottom: 45px;
   overflow-y: scroll;
@@ -30,21 +32,27 @@
 }
 
 .gridItem {
-  max-width: 100%;
+  padding: 10px;
+  max-width: 800px;
   display: flex;
+  background-color: rgb(10, 24, 39);
   max-height: max-content;
   gap: 15px;
   flex-direction: column;
   margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 2px black;
 }
 
 .header {
-  font-size: calc(20px + 0.390625vw);
+  font-size: calc(18px + 0.390625vw);
   color: white;
+  padding-top: 20px;
 }
 
 .projectImage {
   width: 100%;
+  border-radius: 25px;
 }
 
 .projectImage:hover {
@@ -63,13 +71,13 @@
   background-color: #16182a;
   color: white;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 15px;
 }
 
 .ghIcon {
   height: 50px;
-  vertical-align: middle;
 }
 
 .ghIcon:hover {

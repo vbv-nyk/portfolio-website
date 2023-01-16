@@ -7,7 +7,6 @@ function Overlay(props) {
   if (imageClicked)
     return (
       <>
-        <div className={styles.projectName}>{props.name}</div>
         <div className={styles.projectOverlay}>
           <div className={styles.projectDescription}>{props.description}</div>
           <div className={styles.ghIco}>
@@ -21,11 +20,11 @@ function Overlay(props) {
             </a>
           </div>
         </div>
+        <div className={styles.projectName}>{props.name}</div>
       </>
     );
   return (
     <>
-      <div className={styles.projectName}>{props.name}</div>
       <img
         src={props.source}
         className={styles.projectImage}
@@ -34,6 +33,7 @@ function Overlay(props) {
           setImageClicked(true);
         }}
       />
+      <div className={styles.projectName}>{props.name}</div>
     </>
   );
 }
@@ -47,15 +47,13 @@ function GridItem(props) {
 
 export default function Projects() {
   const [imageNo, setImageNo] = useState(0);
-  const gridItems = projects.map((project) => {
-    return <GridItem {...project} />;
+  const gridItems = projects.map((project, index) => {
+    return <GridItem {...project} key={index} />;
   });
   return (
-    <>
-      <div className={styles.projects}>
-        <h1 className={styles.header}>My Projects</h1>
-        <div className={styles.projectsGrid}>{gridItems}</div>
-      </div>
-    </>
+    <div className={styles.projects} id="projects">
+      <h1 className={styles.header}>My Projects</h1>
+      <div className={styles.projectsGrid}>{gridItems}</div>
+    </div>
   );
 }

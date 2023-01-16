@@ -38,6 +38,13 @@
   color: rgb(0, 233, 250);
 }
 
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
 @media (max-width: 500px) {
   .navBarContainer {
     display: none;

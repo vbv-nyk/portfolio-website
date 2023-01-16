@@ -3,7 +3,7 @@ import { ReactDOM } from "react";
 import styles from "./AboutMe.module.css";
 export default function AboutMe() {
   return (
-    <div className={styles.aboutMe}>
+    <div className={styles.aboutMe} id="about">
       <div className={styles.profileContainer}>
         <img src="/profile.webp" className={styles.myPicture} />
         <div className={styles.profileDetails}>
