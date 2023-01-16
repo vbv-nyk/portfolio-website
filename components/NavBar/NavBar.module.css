@@ -45,8 +45,3 @@
 .link:hover {
   text-decoration: underline;
 }
-@media (max-width: 500px) {
-  .navBarContainer {
-    display: none;
-  }
-}
