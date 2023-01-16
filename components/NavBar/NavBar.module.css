@@ -33,7 +33,7 @@
   color: rgb(0, 229, 255);
 }
 
-.navbarList .listItem:hover {
+.navbarList .listItem:active {
   cursor: pointer;
   color: rgb(0, 233, 250);
 }
@@ -42,6 +42,6 @@
   text-decoration: none;
 }
 
-.link:hover {
-  text-decoration: underline;
+.link:focus {
+  text-decoration: none;
 }

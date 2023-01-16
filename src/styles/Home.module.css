@@ -8,7 +8,7 @@
 
 @media (max-width: 500px) {
   .sectionsContainer {
-    flex-direction: column;
+    scroll-behavior: auto;
     overflow: hidden;
   }
 }
