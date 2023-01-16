@@ -1,13 +1,45 @@
 import { projects } from "@/pages/api/projectsAPI";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { ReactDOM } from "react";
 import styles from "./Projects.module.css";
-
+function Overlay(props) {
+  const [imageClicked, setImageClicked] = useState(false);
+  if (imageClicked)
+    return (
+      <>
+        <div className={styles.projectName}>{props.name}</div>
+        <div className={styles.projectOverlay}>
+          <div className={styles.projectDescription}>{props.description}</div>
+          <div className={styles.ghIco}>
+            <img
+              src="/github-mark-white.svg"
+              className={styles.ghIcon}
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        ;
+      </>
+    );
+  return (
+    <>
+      <div className={styles.projectName}>{props.name}</div>
+      <img
+        src={props.source}
+        className={styles.projectImage}
+        alt=""
+        onClick={() => {
+          setImageClicked(true);
+        }}
+      />
+    </>
+  );
+}
 function GridItem(props) {
   return (
     <div className={styles.gridItem}>
-      <img src={props.source} className={styles.projectImage} alt="" />
-      <div className={styles.projectName}>{props.name}</div>
+      <Overlay {...props} />
     </div>
   );
 }
