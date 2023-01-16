@@ -14,6 +14,8 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
+      <div className={styles.githubContainer}></div>
+      <div className={styles.devfolioContainer}></div>
     </div>
   );
 }
