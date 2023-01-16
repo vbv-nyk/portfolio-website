@@ -11,15 +11,16 @@ function Overlay(props) {
         <div className={styles.projectOverlay}>
           <div className={styles.projectDescription}>{props.description}</div>
           <div className={styles.ghIco}>
-            <img
-              src="/github-mark-white.svg"
-              className={styles.ghIcon}
-              alt=""
-              srcset=""
-            />
+            <a href={props.ghLink} target="_blank">
+              <img
+                src="/github-mark-white.svg"
+                className={styles.ghIcon}
+                alt=""
+                srcset=""
+              />
+            </a>
           </div>
         </div>
-        ;
       </>
     );
   return (
