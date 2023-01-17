@@ -6,7 +6,10 @@ export default function AboutMe() {
   return (
     <div className={styles.aboutMe} id="about">
       <div className={styles.profileContainer}>
-        <img src="/profile.webp" className={styles.myPicture} />
+        <img
+          src="https://cdn.dribbble.com/userupload/4289902/file/original-0b32cceb7fa1c6cb743a630136db90bc.png?compress=1&resize=400x300&vertical=top"
+          className={styles.myPicture}
+        />
         <div className={styles.profileDetails}>
           <div className={styles.name}>Vaibhav Nayak</div>
           <div className={styles.desc}>

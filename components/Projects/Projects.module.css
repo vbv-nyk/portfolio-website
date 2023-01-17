@@ -5,12 +5,19 @@
   gap: 15px;
   justify-content: center;
   scroll-snap-stop: always;
-
   background: rgb(0, 0, 0);
   align-items: center;
+  --title-color: white;
+  --description-color: white;
   scroll-behavior: smooth;
   flex-direction: column;
   scroll-snap-align: center;
+}
+
+.header {
+  font-size: calc(25px + 0.390625vw);
+  color: var(--title-color);
+  padding-top: 20px;
 }
 
 @keyframes shake {
@@ -23,8 +30,9 @@
 }
 
 .projectsGrid {
+  background-color: #080808;
   padding: 20px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   overflow-y: scroll;
   overflow-x: hidden;
   width: max(90%, 500px);
@@ -38,7 +46,7 @@
 
 .projectName {
   text-align: center;
-  color: white;
+  color: var(--title-color);
   font-weight: bold;
   font-size: calc(14px + 0.390625vw);
 }
@@ -58,11 +66,6 @@
 
 .gridItem:hover {
   animation: 1 1s ease shake reverse;
-}
-.header {
-  font-size: calc(25px + 0.390625vw);
-  color: white;
-  padding-top: 20px;
 }
 
 .projectImage {
@@ -97,7 +100,7 @@
   padding: 20px;
   left: 0;
   background-color: #16181d;
-  color: white;
+  color: var(--description-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,9 +118,9 @@
 
 .backButton {
   position: absolute;
-  font-size: calc(14px + 0.390625vw);
+  font-size: calc(16px + 0.390625vw);
   font-weight: 600;
-  color: red;
+  color: rgb(141 141 243);
   padding: 2px 5px;
   right: 30px;
 }
