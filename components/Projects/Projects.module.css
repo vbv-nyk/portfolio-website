@@ -40,7 +40,7 @@
   text-align: center;
   color: white;
   font-weight: bold;
-  font-size: calc(18px + 0.390625vw);
+  font-size: calc(14px + 0.390625vw);
 }
 
 .gridItem {
@@ -68,6 +68,16 @@
 .projectImage {
   width: 100%;
   border-radius: 25px;
+  animation: rotateCard 1 0.5s;
+}
+
+@keyframes rotateCard {
+  from {
+    transform: rotateY(-180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
 }
 
 .projectImage:hover {
@@ -94,6 +104,26 @@
   gap: 15px;
   animation: rotation-animation ease-in-out 2s 1;
 }
+
+.cardControls {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButton {
+  position: absolute;
+  font-size: calc(14px + 0.390625vw);
+  font-weight: 600;
+  color: red;
+  padding: 2px 5px;
+  right: 30px;
+}
+.backButton:hover {
+  cursor: pointer;
+}
 @keyframes rotation-animation {
   from {
     opacity: 0;
@@ -111,13 +141,20 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 1000px) {
   .projectsGrid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    width: max(80%, 300px);
+    width: max(90%, 300px);
     max-height: 100vh;
   }
   .projects {
     justify-content: flex-start;
+  }
+}
+@media (orientation: landscape) {
+  .projectsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    width: max(90%, 300px);
+    max-height: 100vh;
   }
 }

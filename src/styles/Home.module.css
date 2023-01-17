@@ -5,9 +5,3 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
-
-@media (max-width: 500px) {
-  .sectionsContainer {
-    scroll-behavior: auto;
-  }
-}

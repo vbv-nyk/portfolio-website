@@ -8,6 +8,17 @@ function Overlay(props) {
     return (
       <>
         <div className={styles.projectOverlay}>
+          <div className={styles.cardControls}>
+            <div
+              className={styles.backButton}
+              onClick={() => {
+                setImageClicked(false);
+              }}
+            >
+              X
+            </div>
+            <div className={styles.projectName}>{props.name}</div>
+          </div>
           <div className={styles.projectDescription}>{props.description}</div>
           <div className={styles.ghIco}>
             <a href={props.ghLink} target="_blank">
@@ -20,7 +31,6 @@ function Overlay(props) {
             </a>
           </div>
         </div>
-        <div className={styles.projectName}>{props.name}</div>
       </>
     );
   return (
