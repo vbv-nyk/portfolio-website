@@ -31,7 +31,7 @@ export default function AboutMe() {
                 className={styles.logoItem}
               />
             </Link>
-            <Link href="https://www.codechef.com/users/vbv_nyk" target="_blank">
+            <Link href="https://www.codechef.com/users/" target="_blank">
               <img
                 src="https://pbs.twimg.com/profile_images/1477930785537605633/ROTVNVz7_400x400.jpg"
                 alt=""
